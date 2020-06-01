@@ -22,20 +22,29 @@ public class Telekinesis : MonoBehaviour
         Vector2 mousePos2d = new Vector2(mousePos.x, mousePos.y);
         if (Input.GetMouseButtonDown(0))
         {
-            if (Physics2D.Raycast(mousePos2d, Vector2.zero))
+            //if (Physics2D.Raycast(mousePos2d, Vector2.zero))
+            if (Physics2D.OverlapPoint(mousePos2d) == GetComponent<BoxCollider2D>())
             {
                 drag = true;
+                rb.gravityScale = 0;
             }
         }
         else if (Input.GetMouseButtonUp(0))
         {
             drag = false;
+            rb.gravityScale = 1;
         }
 
         if (drag)
         {
             Vector2 dir = mousePos - transform.position;
-            rb.AddForce(dir * teleForce * Time.deltaTime);
+            float dot = Vector2.Dot(rb.velocity, dir);
+            float backforce = 1;
+            if (dot < 0)
+            {
+                backforce = 4;
+            }
+            rb.AddForce(dir.normalized * backforce * teleForce * Time.deltaTime);
         }
     }
 }
