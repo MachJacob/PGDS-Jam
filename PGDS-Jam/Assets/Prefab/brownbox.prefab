@@ -100,7 +100,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.05
   m_AngularDrag: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -207,9 +207,9 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 0.5882353}
-      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0.80348355, g: 0.35248306, b: 0.8396226, a: 0.5882353}
+      key1: {r: 0.80348355, g: 0.35248306, b: 0.8396226, a: 0.5882353}
+      key2: {r: 0, g: 0, b: 0, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -225,7 +225,7 @@ LineRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 0
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0

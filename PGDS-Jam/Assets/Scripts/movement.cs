@@ -31,4 +31,10 @@ public class Movement : MonoBehaviour
             rb.AddForce(Vector2.right * speed * Time.deltaTime);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("You ded");
+        //TODO: actually make ded
+    }
 }

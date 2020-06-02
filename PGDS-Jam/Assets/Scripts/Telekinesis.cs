@@ -18,7 +18,13 @@ public class Telekinesis : MonoBehaviour
 
         cam = Camera.main;
 
+        lr = gameObject.AddComponent<LineRenderer>();
         lr = GetComponent<LineRenderer>();
+        lr.material = new Material(Shader.Find("Legacy Shaders/Particles/Alpha Blended Premultiply"));
+        lr.startColor = new Color(205/255f, 90 / 255f, 214 / 255f, 150 / 255f);
+        lr.endColor = new Color(205 / 255f, 90 / 255f, 214 / 255f, 150 / 255f);
+        lr.startWidth = 0.025f;
+        lr.endWidth = 0.025f;
     }
 
     void Update()
@@ -28,7 +34,7 @@ public class Telekinesis : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             //if (Physics2D.Raycast(mousePos2d, Vector2.zero))
-            if (Physics2D.OverlapPoint(mousePos2d) == GetComponent<BoxCollider2D>())
+            if (Physics2D.OverlapPoint(mousePos2d) == GetComponent<Collider2D>())
             {
                 drag = true;
                 rb.gravityScale = 0;
@@ -39,7 +45,7 @@ public class Telekinesis : MonoBehaviour
         else if (Input.GetMouseButtonUp(0))
         {
             drag = false;
-            rb.gravityScale = 0.5f;
+            rb.gravityScale = 1f;
             lr.enabled = false;
         }
 
@@ -58,7 +64,7 @@ public class Telekinesis : MonoBehaviour
             }
             rb.AddForceAtPosition(dir * backforce * teleForce * Time.deltaTime, transform.TransformPoint(point));
             //rb.AddForce(dir * backforce * teleForce * Time.deltaTime);
-            Debug.Log(dir);
+            //Debug.Log(dir);
         }
     }
 }
