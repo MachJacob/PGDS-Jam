@@ -5,6 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float lethalVel;
+
+    [FMODUnity.EventRef] public string explosionSoundPath;
+
     void Start()
     {
         
@@ -19,6 +22,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.relativeVelocity.magnitude > lethalVel)
         {
+            FMODUnity.RuntimeManager.PlayOneShotAttached(explosionSoundPath, gameObject);
+
             Destroy(gameObject, 5);
             Debug.Log(collision.relativeVelocity.magnitude);
         }
