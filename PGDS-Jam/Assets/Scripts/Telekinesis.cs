@@ -61,7 +61,7 @@ public class Telekinesis : MonoBehaviour
             //Caps velocity at 5 to be sent to FMOD
             vel = (vel > 5) ? 5 : vel;
 
-            Debug.Log(vel);
+            //Debug.Log(vel);
 
             tkAudioInstance.setParameterByName("Speed", vel);
         }
