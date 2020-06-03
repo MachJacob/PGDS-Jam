@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6589180620397996861}
   - component: {fileID: 6589180620397996860}
   - component: {fileID: 6589180620397996856}
-  - component: {fileID: 6589180620397996857}
+  - component: {fileID: 5706874267890781626}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lethalVel: 5
   explosionSoundPath: event:/Enemy/Explosion
---- !u!114 &6589180620397996857
+--- !u!114 &5706874267890781626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6589180620397996851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07b0a355424fba448e9435fa65900e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 31dc9776d5e34214ebd8be2f434132ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleForce: 100
+  teleForce: 0
