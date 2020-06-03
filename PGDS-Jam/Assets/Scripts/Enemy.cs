@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShotAttached(explosionSoundPath, gameObject);
 
             Destroy(gameObject, 5);
-            Debug.Log(collision.relativeVelocity.magnitude);
+            //Debug.Log(collision.relativeVelocity.magnitude);
         }
     }
 }
