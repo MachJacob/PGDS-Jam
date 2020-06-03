@@ -34,12 +34,14 @@ public class Telekinesis : MonoBehaviour
                         dragged.Add(f.GetComponent<Grabbable>());
                         f.GetComponent<Grabbable>().SetDrag(true);
                         tkAudioInstance = FMODUnity.RuntimeManager.CreateInstance(tkSustainAudioPath);
-                        FMODUnity.RuntimeManager.AttachInstanceToGameObject(tkAudioInstance, gameObject.transform, gameObject.GetComponent<Rigidbody2D>());
+                        FMODUnity.RuntimeManager.AttachInstanceToGameObject(tkAudioInstance, f.gameObject.transform, f.gameObject.GetComponent<Rigidbody2D>());
                         tkAudioInstance.start();
                     }
                 }
             }
         }
+
+
         else if (Input.GetMouseButtonUp(0))
         {
             foreach(Grabbable grab in dragged)
@@ -53,6 +55,15 @@ public class Telekinesis : MonoBehaviour
         foreach(Grabbable grab in dragged)
         {
             grab.Drag(transform.position, TeleForce);
+
+            float vel = grab.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude;
+
+            //Caps velocity at 5 to be sent to FMOD
+            vel = (vel > 5) ? 5 : vel;
+
+            Debug.Log(vel);
+
+            tkAudioInstance.setParameterByName("Speed", vel);
         }
     }
 }

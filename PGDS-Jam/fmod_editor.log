@@ -7,7 +7,7 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 96000Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fb3d7c08008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fb3d789e808 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,25 +20,42 @@
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] SystemI::createSound                     : filename = ../FMODBanks/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fb3d6e82cc8 : node = 0x7fb3d6ead9d0
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fb3d76c2e58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fb3d6e82cc8
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fb3d6d08f68 : node = 0x7fb3d8c8b5c0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fb3d9ca51a8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fb3d6d08f68
 [LOG] SystemI::createSoundInternal             :     Create name='../FMODBanks/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 10206304
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7232
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fb3d6eadae0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fb3d8c8b6d0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TK Sustain 4', format=2, channels=2, frequency=48000, lengthbytes=9072064, lengthpcm=2268000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.088713.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fb3d6e82cc8
-[LOG] SoundI::release                          : TK Sustain 4 (0x7fb3d6e82cc8)
-[LOG] SoundI::release                          :     TK Sustain 4 (0x7fb3d6e9ed68)
-[LOG] SoundI::release                          :     TK Sustain 4 (0x7fb3d6e9fd68)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fb3d6d08f68
+[LOG] SoundI::release                          : TK Sustain 4 (0x7fb3d6d08f68)
+[LOG] SoundI::release                          :     TK Sustain 4 (0x7fb3d8a77408)
+[LOG] SoundI::release                          :     TK Sustain 4 (0x7fb3d73b4938)
+[LOG] SystemI::createSound                     : filename = ../FMODBanks/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fb3d9c663f8 : node = 0x7fb3d9c5d290
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fb3d9ca51a8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fb3d9c663f8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMODBanks/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10206304
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7232
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fb3d9c5d3a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='TK Sustain 4', format=2, channels=2, frequency=48000, lengthbytes=9072064, lengthpcm=2268000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.088713.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fb3d9c663f8
+[LOG] SoundI::release                          : TK Sustain 4 (0x7fb3d9c663f8)
+[LOG] SoundI::release                          :     TK Sustain 4 (0x7fb3d73e6d98)
+[LOG] SoundI::release                          :     TK Sustain 4 (0x7fb3d73965a8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -49,6 +66,10 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 132)
+[LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 132)
+[LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 132)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
