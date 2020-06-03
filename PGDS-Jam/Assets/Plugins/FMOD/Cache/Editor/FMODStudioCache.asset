@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Enemy/Gunshot
   guid: 7d1c4b4921d4ed498ae50e5f334b85ed
   Banks:
-  - {fileID: 6566894568404970868}
+  - {fileID: -3199632001861423124}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -37,11 +37,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMODBanks/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637267076244092571
+  lastModified: 637267335651634341
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 852
+  Exists: 1
+--- !u!114 &-3199632001861423124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637267335651617968
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &-1651154678336967091
 MonoBehaviour:
@@ -58,7 +76,7 @@ MonoBehaviour:
   Path: event:/Enemy/Explosion
   guid: f374c0dac250394c809d217138100b61
   Banks:
-  - {fileID: 6566894568404970868}
+  - {fileID: -3199632001861423124}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -80,16 +98,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -5283284597255184511}
-  - {fileID: 6566894568404970868}
+  - {fileID: -3199632001861423124}
   EditorEvents:
   - {fileID: -6581323503899890142}
   - {fileID: -1651154678336967091}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 6566894568404970868}
+  - {fileID: -3199632001861423124}
   StringsBanks:
   - {fileID: -5283284597255184511}
-  stringsBankWriteTime: 637267076244092571
+  stringsBankWriteTime: 637267335651634341
   cacheVersion: 3
 --- !u!114 &3001134640123149144
 MonoBehaviour:
