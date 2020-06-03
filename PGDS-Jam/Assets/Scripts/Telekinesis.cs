@@ -7,6 +7,8 @@ public class Telekinesis : MonoBehaviour
     private Collider2D col;
     private List<Grabbable> dragged;
     public float TeleForce;
+    [FMODUnity.EventRef] public string tkSustainAudioPath;
+    FMOD.Studio.EventInstance tkAudioInstance;
 
     private void Start()
     {
@@ -31,6 +33,9 @@ public class Telekinesis : MonoBehaviour
                     {
                         dragged.Add(f.GetComponent<Grabbable>());
                         f.GetComponent<Grabbable>().SetDrag(true);
+                        tkAudioInstance = FMODUnity.RuntimeManager.CreateInstance(tkSustainAudioPath);
+                        FMODUnity.RuntimeManager.AttachInstanceToGameObject(tkAudioInstance, gameObject.transform, gameObject.GetComponent<Rigidbody2D>());
+                        tkAudioInstance.start();
                     }
                 }
             }
@@ -39,6 +44,8 @@ public class Telekinesis : MonoBehaviour
         {
             foreach(Grabbable grab in dragged)
             {
+                tkAudioInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                tkAudioInstance.release();
                 grab.SetDrag(false);
             }
             dragged.Clear();
