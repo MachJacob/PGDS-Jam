@@ -54,6 +54,11 @@ public class Telekinesis : MonoBehaviour
         }
         foreach(Grabbable grab in dragged)
         {
+            if (grab == null)
+            {
+                dragged.Remove(grab);
+                return;
+            }
             grab.Drag(transform.position, TeleForce);
 
             float vel = grab.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude;
