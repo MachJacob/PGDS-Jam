@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class Grabbable : MonoBehaviour
 {
-    public float teleForce;
     private Rigidbody2D rb;
     private Camera cam;
     private LineRenderer lr;
-    private bool drag;
     private Vector2 point;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        drag = false;
 
         cam = Camera.main;
 
@@ -47,7 +44,6 @@ public class Grabbable : MonoBehaviour
 
     public void SetDrag(bool _state)
     {
-        drag = _state;
         lr.enabled = _state;
         if (_state)
         {
