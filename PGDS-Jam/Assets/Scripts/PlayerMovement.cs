@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     public bool isDed;
+    [SerializeField] private float health;
 
     [FMODUnity.EventRef] public string playerImapactAudioPath;
     FMOD.Studio.EventInstance playerImpactAudioInstance;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (isDed) return;
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(Vector2.up * speed * Time.deltaTime);
@@ -45,10 +47,20 @@ public class PlayerMovement : MonoBehaviour
         playerImpactAudioInstance.setParameterByName("Force", collision.relativeVelocity.magnitude / 10);
         playerImpactAudioInstance.start();
 
-        isDed = true;
+        if (!isDed)
+        {
+            health--;
 
-        Debug.Log("You ded");
-        //TODO: actually make ded
+            if (health <= 0)
+            {
+                isDed = true;
+
+                Debug.Log("You ded");
+                rb.gravityScale = 1;
+                rb.constraints = RigidbodyConstraints2D.None;
+                rb.drag = 0.5f;
+            }
+        }
 
         playerImpactAudioInstance.release();
     }
