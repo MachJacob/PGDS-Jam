@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FollowCam : MonoBehaviour
 {
@@ -18,7 +19,15 @@ public class FollowCam : MonoBehaviour
     void Start()
     {
         musicInstance = FMODUnity.RuntimeManager.CreateInstance(musicPath);
-        musicInstance.setParameterByName("Level", 0);
+
+        if (SceneManager.GetActiveScene().name == "SampleScene")
+        {
+            musicInstance.setParameterByName("Level", 0);
+        }
+        else
+		{
+            musicInstance.setParameterByName("Level", 1);
+        }
         musicInstance.start();
 
         GameObject playerObj = GameObject.Find("Player");
