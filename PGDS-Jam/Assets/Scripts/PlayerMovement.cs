@@ -6,10 +6,17 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     private Rigidbody2D rb;
+    public bool isDed;
+
+    [FMODUnity.EventRef] public string playerImapactAudioPath;
+    FMOD.Studio.EventInstance playerImpactAudioInstance;
+
+
     //
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        isDed = false;
     }
 
     void Update()
@@ -34,7 +41,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        playerImpactAudioInstance = FMODUnity.RuntimeManager.CreateInstance(playerImapactAudioPath);
+        playerImpactAudioInstance.setParameterByName("Force", collision.relativeVelocity.magnitude / 10);
+        playerImpactAudioInstance.start();
+
+        isDed = true;
+
         Debug.Log("You ded");
         //TODO: actually make ded
+
+        playerImpactAudioInstance.release();
     }
 }
