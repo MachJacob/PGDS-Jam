@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4997988106709561530}
   - component: {fileID: 4997988106709561531}
   - component: {fileID: -8795086809918380402}
+  - component: {fileID: -556310764607406758}
   m_Layer: 0
   m_Name: brownbox
   m_TagString: Untagged
@@ -143,4 +144,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31dc9776d5e34214ebd8be2f434132ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleForce: 0
+--- !u!114 &-556310764607406758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4997988106709561529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e6b201ad5644b24a8ec4d19c40fe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: 0
+  groundImpactAudioPath: event:/Ground/Impact
