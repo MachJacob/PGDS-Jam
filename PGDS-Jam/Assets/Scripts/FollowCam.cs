@@ -16,22 +16,33 @@ public class FollowCam : MonoBehaviour
 
     private PlayerMovement playerMovement;
 
+    private Portal portalCom;
+
     void Start()
     {
         musicInstance = FMODUnity.RuntimeManager.CreateInstance(musicPath);
 
+        Debug.Log(SceneManager.GetActiveScene().name);
+
         if (SceneManager.GetActiveScene().name == "SampleScene")
         {
-            musicInstance.setParameterByName("Level", 0);
+            musicInstance.setParameterByName("Level", 2);
         }
-        else
+        else if(SceneManager.GetActiveScene().name == "SampleScene 1")
 		{
             musicInstance.setParameterByName("Level", 1);
+        }
+        else
+        {
+            musicInstance.setParameterByName("Level", 0);
         }
         musicInstance.start();
 
         GameObject playerObj = GameObject.Find("Player");
         playerMovement = playerObj.GetComponent<PlayerMovement>();
+
+        GameObject portalObj = GameObject.Find("portal");
+        portalCom = portalObj.GetComponent<Portal>();
     }
 
 
@@ -42,9 +53,15 @@ public class FollowCam : MonoBehaviour
             Mathf.Clamp(player.GetComponent<Rigidbody2D>().velocity.magnitude / maxSpeed, 0, 1));
         GetComponent<Camera>().orthographicSize = Mathf.Lerp(GetComponent<Camera>().orthographicSize, targetZoom, Time.deltaTime);
 
+        if(portalCom.isActive)
+        {
+            musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicInstance.release();
+        }
+
         if(playerMovement.isDed)
         {
-            musicInstance.triggerCue();
+            musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             musicInstance.release();
         }
     }

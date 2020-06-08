@@ -7,10 +7,12 @@ public class Portal : MonoBehaviour
 {
     [SerializeField] int nextLevelID;
     public float rotSpeed;
+    public bool isActive;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        isActive = false;
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class Portal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            isActive = true;
             Debug.Log("Go to next level");
             SceneManager.LoadScene(nextLevelID);
         }

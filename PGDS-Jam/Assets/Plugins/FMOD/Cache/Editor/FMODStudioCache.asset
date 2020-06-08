@@ -138,7 +138,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8223633157238162636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8205703608685974764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-8155965930136747707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,6 +241,40 @@ MonoBehaviour:
   lastModified: 637270405250000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-7968121171724190015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7942361156340743676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &-7890915051135215412
 MonoBehaviour:
@@ -328,6 +396,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-7117025463044579136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7061966776555869432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +428,23 @@ MonoBehaviour:
   Name: Force
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6990905978335901808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
   Default: 0
   Exists: 0
 --- !u!114 &-6686461473387992276
@@ -361,7 +463,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6677788299500938564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,7 +497,7 @@ MonoBehaviour:
   Path: event:/Enemy/Gunshot
   guid: 7d1c4b4921d4ed498ae50e5f334b85ed
   Banks:
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -435,6 +537,57 @@ MonoBehaviour:
   Name: Force
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6355907445440018431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6293933642307816761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-5832931933790659736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
   Default: 0
   Exists: 0
 --- !u!114 &-5645446501057122888
@@ -486,12 +639,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMODBanks/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637270451380000000
+  lastModified: 637272103610000000
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 1172
   Exists: 1
+--- !u!114 &-5179986108079770549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272088370000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-5139731649117984651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,6 +681,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5139451406439652521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
 --- !u!114 &-5056595911035777963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,12 +731,12 @@ MonoBehaviour:
   Path: event:/Player/Impact
   guid: efe9250022008846b19e8f502126df06
   Banks:
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -4200080229951211797}
+  - {fileID: -7968121171724190015}
   MinDistance: 0
   MaxDistance: 0
   Length: 1895
@@ -604,6 +792,58 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4489199436116076284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-4423262918449700482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-4226098609608878282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272098940000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-4200080229951211797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,7 +860,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4096281714228152507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,6 +929,23 @@ MonoBehaviour:
   lastModified: 637270405610000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-3596613409335158685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &-3465420703969958917
 MonoBehaviour:
@@ -860,15 +1117,15 @@ MonoBehaviour:
   Path: event:/Music
   guid: b51bcdf3edb7ef49b5b40d8aecc6a5ab
   Banks:
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7457735563362961183}
+  - {fileID: -5139451406439652521}
   MinDistance: 0
   MaxDistance: 0
-  Length: 3000
+  Length: 264000
 --- !u!114 &-2716053982431792283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,6 +1230,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-2399137326127490612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-2351177689697610914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-2265156752084983732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +1334,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2050420099475320305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-1890930877935572942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,12 +1400,12 @@ MonoBehaviour:
   Path: event:/Ground/Impact
   guid: 2eb5c93b8bf4984388460e86b053dad1
   Banks:
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -6686461473387992276}
+  - {fileID: 1625571874298865382}
   MinDistance: 1
   MaxDistance: 4
   Length: 451
@@ -1150,7 +1458,7 @@ MonoBehaviour:
   Path: event:/Enemy/Explosion
   guid: f374c0dac250394c809d217138100b61
   Banks:
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1193,6 +1501,58 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-1282483518515827287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-1232319594477362639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-922032144604763819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272101460000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-892652435737740678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,6 +1587,23 @@ MonoBehaviour:
   lastModified: 637270402250000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-613579051995710677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
   Exists: 0
 --- !u!114 &-590207713886584394
 MonoBehaviour:
@@ -1349,6 +1726,23 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &-786053978235981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,7 +1757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -5283284597255184511}
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   EditorEvents:
   - {fileID: -6581323503899890142}
   - {fileID: -1651154678336967091}
@@ -1373,10 +1767,10 @@ MonoBehaviour:
   - {fileID: -1701453181205276871}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   StringsBanks:
   - {fileID: -5283284597255184511}
-  stringsBankWriteTime: 637270451380000000
+  stringsBankWriteTime: 637272103610000000
   cacheVersion: 3
 --- !u!114 &318384783758264525
 MonoBehaviour:
@@ -1397,6 +1791,23 @@ MonoBehaviour:
   FileSizes: []
   Exists: 0
 --- !u!114 &510154979519224211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &524826660305685224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1482,6 +1893,23 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &1500531827251420367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &1556722786360682070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,6 +1928,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &1625571874298865382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &1646256052555955110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,6 +1961,42 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+  Exists: 0
+--- !u!114 &1649546081272350889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272101050000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1826502316418559781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272080940000000
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &1884749311705578337
 MonoBehaviour:
@@ -1569,6 +2050,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2012963417530254942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &2057116671355657457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272089260000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2319034450513015323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1621,8 +2137,25 @@ MonoBehaviour:
   lastModified: 637270451380000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &2592998949252016542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &2631255356812343523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1654,6 +2187,23 @@ MonoBehaviour:
   Name: Force
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &2807546047808942467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
   Default: 0
   Exists: 0
 --- !u!114 &2852784775204157946
@@ -1760,6 +2310,24 @@ MonoBehaviour:
   Max: 3
   Default: 0
   Exists: 0
+--- !u!114 &3194886017788481313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272103610000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3342413302110944161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,7 +2344,7 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3633165389900294874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,6 +2379,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &4013874599952069395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272100660000000
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &4046326922101449118
 MonoBehaviour:
@@ -1933,6 +2519,23 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &4837247190155840042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &4872728252910579020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1948,6 +2551,24 @@ MonoBehaviour:
   Path: ../FMODBanks/Desktop/Master.bank
   SubDir: 
   lastModified: 637269807090000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &5145267831210766785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637272090440000000
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -1968,6 +2589,23 @@ MonoBehaviour:
   lastModified: 637270370100000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &5310042539887033433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &5323050938936102809
 MonoBehaviour:
@@ -2038,6 +2676,23 @@ MonoBehaviour:
   Default: 0
   Exists: 0
 --- !u!114 &5712766323698995273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &5940400281010559442
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2175,6 +2830,57 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &6719000531292882442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &6851112428289180448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &6864499175609327055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &6967363021484591673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2261,7 +2967,7 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7527211061737227450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2313,6 +3019,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &7581849899922489770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
 --- !u!114 &7592022647946737569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,6 +3192,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8168094860302743652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &8210430874635932089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2501,12 +3241,12 @@ MonoBehaviour:
   Path: event:/Player/Telekinesis
   guid: 77ef0e52263e6b4899e375df49ed313c
   Banks:
-  - {fileID: 2556654132778982907}
+  - {fileID: 3194886017788481313}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3342413302110944161}
+  - {fileID: 7581849899922489770}
   MinDistance: 1
   MaxDistance: 5
   Length: 47250
@@ -2542,6 +3282,23 @@ MonoBehaviour:
   Name: Speed
   Min: 0
   Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &8578940022002222526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impact/Force
+  m_EditorClassIdentifier: 
+  Name: Force
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &8687257518840103914
@@ -2631,6 +3388,23 @@ MonoBehaviour:
   lastModified: 637270386250000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &8899541436411504401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telekinesis/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 5
+  Default: 0
   Exists: 0
 --- !u!114 &9048126415503988074
 MonoBehaviour:

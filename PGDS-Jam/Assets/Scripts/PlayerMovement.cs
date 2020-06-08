@@ -43,9 +43,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        playerImpactAudioInstance = FMODUnity.RuntimeManager.CreateInstance(playerImapactAudioPath);
-        playerImpactAudioInstance.setParameterByName("Force", collision.relativeVelocity.magnitude / 10);
-        playerImpactAudioInstance.start();
 
         if (!isDed)
         {
@@ -59,9 +56,12 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = 1;
                 rb.constraints = RigidbodyConstraints2D.None;
                 rb.drag = 0.5f;
+
+                playerImpactAudioInstance = FMODUnity.RuntimeManager.CreateInstance(playerImapactAudioPath);
+                playerImpactAudioInstance.setParameterByName("Force", collision.relativeVelocity.magnitude / 10);
+                playerImpactAudioInstance.start();
+                playerImpactAudioInstance.release();
             }
         }
-
-        playerImpactAudioInstance.release();
     }
 }
