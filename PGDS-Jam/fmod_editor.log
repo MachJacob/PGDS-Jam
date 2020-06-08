@@ -6,7 +6,7 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fa9fd08dc08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fa9fd0e6208 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,86 +17,3 @@
 [LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 132)
 [LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 132)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SystemI::createSound                     : filename = ../FMODBanks/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fa9ff434ad8 : node = 0x7fa9ff4b06d0
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa9fcd68348.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa9ff434ad8
-[LOG] SystemI::createSoundInternal             :     Create name='../FMODBanks/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 77219328
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16000
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa9ff4b07e0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='DifficultMusic', format=2, channels=2, frequency=48000, lengthbytes=19968064, lengthpcm=4992000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa9ff434ad8
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 77219328
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 16000
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x70000eb228b4
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1469224dc
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x146922593
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1469225c0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x146922662
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7faa00d1b418
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Ground Impact 1', format=2, channels=2, frequency=48000, lengthbytes=69056, lengthpcm=17242, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.712822.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 77219328
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 16000
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x70000eb228b4
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1469224dc
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x146922593
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1469225c0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x146922662
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7faa00d1b418
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Ground Impact 3', format=2, channels=2, frequency=48000, lengthbytes=86688, lengthpcm=21656, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.823966.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 77219328
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 16000
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x70000eb228b4
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1469224dc
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x146922593
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1469225c0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x146922662
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7faa00d1b418
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Ground Impact 2', format=2, channels=2, frequency=48000, lengthbytes=74432, lengthpcm=18591, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.357102.
-[LOG] SoundI::release                          : 14_Warzone (0x7fa9fcdfb378)
-[LOG] SoundI::release                          :     14_Warzone (0x7fa9fcd8eb48)
-[LOG] SoundI::release                          :     14_Warzone (0x7fa9fcd8ed98)
-[LOG] SoundI::release                          : DifficultMusic (0x7fa9ff434ad8)
-[LOG] SoundI::release                          :     DifficultMusic (0x7fa9fe5068a8)
-[LOG] SoundI::release                          :     DifficultMusic (0x7fa9fe56fd08)
-[LOG] SoundI::release                          :  (0x7fa9fcd32628)
-[LOG] SoundI::release                          :     Ground Impact 1 (0x7fa9fcee78d8)
-[LOG] SoundI::release                          :  (0x7fa9ff24e038)
-[LOG] SoundI::release                          :     Ground Impact 2 (0x7fa9fcd4c098)
-[LOG] SoundI::release                          :  (0x7fa9ff24a9b8)
-[LOG] SoundI::release                          :     Ground Impact 3 (0x7fa9fce705a8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
