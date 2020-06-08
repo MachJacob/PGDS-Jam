@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public bool isDed;
     [SerializeField] private float health;
+    public Animator anim;
 
     [FMODUnity.EventRef] public string playerImapactAudioPath;
     FMOD.Studio.EventInstance playerImpactAudioInstance;
@@ -18,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         isDed = false;
+        anim = gameObject.GetComponent<Animator>();
+        anim.ResetTrigger("hitSurface");
     }
 
     void Update()
@@ -61,6 +64,8 @@ public class PlayerMovement : MonoBehaviour
                 playerImpactAudioInstance.setParameterByName("Force", collision.relativeVelocity.magnitude / 10);
                 playerImpactAudioInstance.start();
                 playerImpactAudioInstance.release();
+
+                anim.SetTrigger("hitSurface");
             }
         }
     }

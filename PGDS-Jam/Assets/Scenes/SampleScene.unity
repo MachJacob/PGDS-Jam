@@ -483,6 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevelID: 1
   rotSpeed: 60
+  isActive: 0
 --- !u!212 &872715856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -715,6 +716,7 @@ GameObject:
   - component: {fileID: 2027698987}
   - component: {fileID: 2027698991}
   - component: {fileID: 2027698992}
+  - component: {fileID: 2027698993}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -757,6 +759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1000
   isDed: 0
+  health: 0
   playerImapactAudioPath: event:/Player/Impact
 --- !u!212 &2027698989
 SpriteRenderer:
@@ -851,6 +854,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: -1
+--- !u!95 &2027698993
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027698986}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f3b2239e42574d40a30ca220236ee3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2089785362
 GameObject:
   m_ObjectHideFlags: 0
