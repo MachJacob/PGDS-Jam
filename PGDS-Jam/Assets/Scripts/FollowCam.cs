@@ -10,6 +10,7 @@ public class FollowCam : MonoBehaviour
     [SerializeField] Vector2 zoomRange;
     [SerializeField] float maxSpeed;
     private float targetZoom;
+    public bool title = false;
 
     [FMODUnity.EventRef] public string musicPath;
     FMOD.Studio.EventInstance musicInstance;
@@ -48,6 +49,11 @@ public class FollowCam : MonoBehaviour
 
     void Update()
     {
+        if (title)
+        {
+            transform.Translate(3 * Time.deltaTime, 0, 0);
+            return;
+        }
         transform.position = player.position + offset;
         targetZoom = Mathf.Lerp(zoomRange.x, zoomRange.y,
             Mathf.Clamp(player.GetComponent<Rigidbody2D>().velocity.magnitude / maxSpeed, 0, 1));
