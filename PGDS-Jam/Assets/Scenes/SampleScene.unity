@@ -133,15 +133,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6589180620397996856, guid: dd01ad1a7edcf4049833db57fc36f610,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2027698990}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.718351
+      value: 22.86
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5315433
+      value: -0.71
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
@@ -645,15 +650,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6589180620397996856, guid: dd01ad1a7edcf4049833db57fc36f610,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2027698990}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3395314
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.16059098
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
@@ -788,6 +798,11 @@ PrefabInstance:
       propertyPath: gunshotSoundPath
       value: event:/Enemy/Gunshot
       objectReference: {fileID: 0}
+    - target: {fileID: 6589180620397996856, guid: dd01ad1a7edcf4049833db57fc36f610,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2027698990}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -796,7 +811,7 @@ PrefabInstance:
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.6603994
+      value: 5.32
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
@@ -8275,12 +8290,12 @@ PrefabInstance:
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9569855
+      value: 3.98
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.27813292
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}
