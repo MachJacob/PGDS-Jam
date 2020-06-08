@@ -402,6 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevelID: 0
   rotSpeed: 60
+  isActive: 0
 --- !u!212 &872715856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -676,6 +677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1000
   isDed: 0
+  health: 0
+  anim: {fileID: 0}
   playerImapactAudioPath: event:/Player/Impact
 --- !u!212 &2027698989
 SpriteRenderer:
@@ -1994,6 +1997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589180620397996856, guid: dd01ad1a7edcf4049833db57fc36f610,
+        type: 3}
+      propertyPath: gunshotSoundPath
+      value: event:/Enemy/Gunshot
       objectReference: {fileID: 0}
     - target: {fileID: 6589180620397996863, guid: dd01ad1a7edcf4049833db57fc36f610,
         type: 3}

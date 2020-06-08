@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     private float cooldown;
 
     [FMODUnity.EventRef] public string explosionSoundPath;
+    [FMODUnity.EventRef] public string gunshotSoundPath;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour
             GameObject _bul = Instantiate(bullet, spawn, Quaternion.identity);
             _bul.GetComponent<Rigidbody2D>().AddForce(dir * 50);
             cooldown = 0;
+            FMODUnity.RuntimeManager.PlayOneShotAttached(gunshotSoundPath, gameObject);
         }
     }
 
