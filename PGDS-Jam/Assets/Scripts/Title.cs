@@ -11,8 +11,14 @@ public class Title : MonoBehaviour
     private float fade, stay;
     private int currSplash, state;
 
+    [FMODUnity.EventRef] public string titleMusicPath;
+    FMOD.Studio.EventInstance titleMusicInstance;
+
     private void Start()
     {
+        titleMusicInstance = FMODUnity.RuntimeManager.CreateInstance(titleMusicPath);
+        titleMusicInstance.start();
+
         currSplash = 0;
         state = 0;
         fade = 0;
@@ -66,5 +72,7 @@ public class Title : MonoBehaviour
     public void OpenGame()
     {
         SceneManager.LoadScene(1);
+        titleMusicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        titleMusicInstance.release();
     }
 }
