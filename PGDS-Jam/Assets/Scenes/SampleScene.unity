@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b58920769f0fed640922a09c14c6d50e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelID: 1
+  nextLevelID: 2
   rotSpeed: 60
   isActive: 0
 --- !u!212 &872715856

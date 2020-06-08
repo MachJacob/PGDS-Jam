@@ -10,6 +10,7 @@ public class Title : MonoBehaviour
     public float fadeTime, stayTime;
     private float fade, stay;
     private int currSplash, state;
+    public GameObject postSplash;
 
     [FMODUnity.EventRef] public string titleMusicPath;
     FMOD.Studio.EventInstance titleMusicInstance;
@@ -62,6 +63,7 @@ public class Title : MonoBehaviour
             splash[currSplash - 1].color = new Color(1, 1, 1, Mathf.Lerp(0, 1, 1 - fade) / fadeTime);
             if (fade >= fadeTime)
             {
+                postSplash.SetActive(true);
                 foreach (Image im in splash)
                 {
                     im.enabled = false;
