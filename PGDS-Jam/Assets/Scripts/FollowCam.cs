@@ -11,6 +11,7 @@ public class FollowCam : MonoBehaviour
     [SerializeField] float maxSpeed;
     private float targetZoom;
     public bool title = false;
+    private float delay;
 
     [FMODUnity.EventRef] public string musicPath;
     FMOD.Studio.EventInstance musicInstance;
@@ -21,6 +22,7 @@ public class FollowCam : MonoBehaviour
 
     void Start()
     {
+        delay = 0;
         musicInstance = FMODUnity.RuntimeManager.CreateInstance(musicPath);
 
         Debug.Log(SceneManager.GetActiveScene().name);
@@ -67,6 +69,11 @@ public class FollowCam : MonoBehaviour
 
         if(playerMovement.isDed)
         {
+            delay += Time.deltaTime;
+            if (delay >= 5)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
             musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             musicInstance.release();
         }
